@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Mail, Smartphone, ExternalLink, ChevronRight, Apple, Box, Network, Database, X } from 'lucide-react';
+import { Mail, Smartphone, ExternalLink, ChevronRight, Box, Network, Database, X } from 'lucide-react';
 
 // --- Brand Icons (Colorful SVGs) ---
 const IconLinkedIn = ({ size = 16, className = '' }) => (
@@ -331,7 +331,7 @@ export default function App() {
   const [isResumeView, setIsResumeView] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#f5f5f7] font-sans selection:bg-[#0071e3] selection:text-white" style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}>
+    //<div className="min-h-screen bg-[#f5f5f7] font-sans selection:bg-[#0071e3] selection:text-white" style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}>
       
       {isResumeView && <ResumeView onClose={() => setIsResumeView(false)} />}
 
