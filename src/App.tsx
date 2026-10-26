@@ -338,7 +338,7 @@ export default function App() {
       {/* Global Nav Bar */}
       <nav className="sticky top-0 z-50 w-full bg-[#1d1d1f]/90 backdrop-blur-md border-b border-[#333333]">
         <div className="max-w-[980px] mx-auto px-4 py-[8px] flex items-center justify-between text-[#f5f5f7] text-[12px] tracking-[-0.022em] font-normal">
-          <a href="#home" className="hover:text-white transition-colors"><Apple size={14} /></a>
+          
           <div className="hidden md:flex items-center space-x-8">
             <a href="#skills" className="hover:text-white transition-colors">Skills</a>
             <a href="#projects" className="hover:text-white transition-colors">Projects</a>
