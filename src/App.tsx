@@ -553,7 +553,7 @@ export default function App() {
       {/* Footer */}
       <footer className="bg-[#f5f5f7] pt-12 pb-8 border-t border-[#d2d2d7]">
         <div className="max-w-[980px] mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             
             <div>
               <h4 className="text-[12px] font-semibold text-[#1d1d1f] mb-3 tracking-[-0.022em]">Contact</h4>
