@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Mail, Smartphone, ExternalLink, ChevronRight, Box, Network, Database, X } from 'lucide-react';
+import { Mail, Smartphone, ExternalLink, ChevronRight, Apple, Box, Network, Database, X } from 'lucide-react';
 
 // --- Brand Icons (Colorful SVGs) ---
 const IconLinkedIn = ({ size = 16, className = '' }) => (
@@ -331,14 +331,14 @@ export default function App() {
   const [isResumeView, setIsResumeView] = useState(false);
 
   return (
-    //<div className="min-h-screen bg-[#f5f5f7] font-sans selection:bg-[#0071e3] selection:text-white" style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}>
+    <div className="min-h-screen bg-[#f5f5f7] font-sans selection:bg-[#0071e3] selection:text-white" style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}>
       
       {isResumeView && <ResumeView onClose={() => setIsResumeView(false)} />}
 
       {/* Global Nav Bar */}
       <nav className="sticky top-0 z-50 w-full bg-[#1d1d1f]/90 backdrop-blur-md border-b border-[#333333]">
         <div className="max-w-[980px] mx-auto px-4 py-[8px] flex items-center justify-between text-[#f5f5f7] text-[12px] tracking-[-0.022em] font-normal">
-          
+          <a href="#home" className="hover:text-white transition-colors"><Apple size={14} /></a>
           <div className="hidden md:flex items-center space-x-8">
             <a href="#skills" className="hover:text-white transition-colors">Skills</a>
             <a href="#projects" className="hover:text-white transition-colors">Projects</a>
@@ -358,6 +358,17 @@ export default function App() {
           <h1 className="text-[40px] md:text-[56px] font-semibold text-[#1d1d1f] tracking-[-0.011em] leading-[1.07] mb-2">
             Arzoo Mehdi
           </h1>
+          <div className="flex justify-center w-full my-8 px-4"> 
+           <video 
+           autoPlay
+           loop
+           controls
+           playsInline
+           className="w-full max-w-4xl rounded-2xl shadow-2xl border border_gray-200"
+           >
+            <source src="/Person_speaking_into_camera_9bc97030.mp4" type="video/mp4" />
+           </video>
+          </div>
           <p className="text-[21px] md:text-[26px] font-light text-[#1d1d1f] tracking-[-0.016em] leading-[1.24] mb-6 max-w-2xl">
             Software Developer
           </p>
@@ -553,7 +564,7 @@ export default function App() {
       {/* Footer */}
       <footer className="bg-[#f5f5f7] pt-12 pb-8 border-t border-[#d2d2d7]">
         <div className="max-w-[980px] mx-auto px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             
             <div>
               <h4 className="text-[12px] font-semibold text-[#1d1d1f] mb-3 tracking-[-0.022em]">Contact</h4>
