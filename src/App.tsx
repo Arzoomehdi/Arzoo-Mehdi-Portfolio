@@ -364,7 +364,7 @@ export default function App() {
            loop
            controls
            playsInline
-           className="w-full max-w-4xl rounded-2xl shadow-2xl border border_gray-200"
+           className="w-full max-w-4xl rounded-2xl shadow-2xl border border-gray-200"
            >
             <source src="/Person_speaking_into_camera_9bc97030.mp4" type="video/mp4" />
            </video>
